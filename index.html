@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imagenes/logobitacora.png" alt="">
+            <h1>Bitácora Parcial 2</h1>
+        </header>
+        <nav>
+            <a href="">Propiedad position</a>
+            <a href="paginas/index2.html">Propiedad display</a>
+            <a href="paginas/index3.html">Nuevas propiedades de CSS3</a>
+            <a href="paginas/index4.html">Animación</a>
+            <a href="paginas/index5.html">Referencias avanzadas</a>
+            <a href="paginas/index6.html">Carrera universitaria</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1>Propiedad position</h1>
+            </div>
+            <div class="izq">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>Le da un tipo de posicionamiento a los elementos.</li>
+                        <li>Tiene 5 direfentes valores para posicionar: static, relative, absolute, fixed y sticky.
+                        </li>
+                        <li>Static: es el valor predeterminado, con el flujo normal de la pagina. </li>
+                        <li>Relative: mueve el elemento segun su posicion original, con top, bottom, etc.</li>
+                        <li>Los otros elementos no se moveran.</li>
+                        <li>Absolute: establece la posicion exacta y el elemento contenedor tiene que ser diferente a
+                            static.</li>
+                        <li>Los elementos ocuparan el espacio dejado.</li>
+                        <li>Fixed: tiene relación con la ventana grafica, estará en el mismo lugar aunque se mueva la
+                            pagina.</li>
+                        <li>Sticky: Intercambia entre relative y fijo.</li>
+                        <li>Se movera de forma relativa hasta que encuentra la posicion dada con la ventana grafica.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dere">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p>Especifica el tipo de posicionamiento utilizado para un elemento. Tiene como valores: top,
+                        bottom, left y right. Funcionan diferente dependiendo del valor de la posición (static,
+                        relative, fixed, absolute y sticky).</p>
+                    <div class="cuadro posit">
+                        <h3>Static</h3>
+                        <p>Se posicionan de forma predeterminada, no afectan los valores top, bottom, left y right,
+                            sigue el
+                            flujo normal de la página. </p>
+                    </div>
+                    <div class="cuadro posit">
+                        <h3>Relative</h3>
+                        <p>Está posicionado con relación a su posición normal. Desplaza un elemento respecto de su
+                            posición
+                            original establecido mediante el posicionamiento normal. Se indica mediante las propiedades
+                            top,
+                            bottom, left y right. Los demás elementos no ocupan su espacio.</p>
+                    </div>
+                    <div class="cuadro posit">
+                        <h3>Absolute</h3>
+                        <p> Establece de forma exacta la posición de la que se muestra una caja. Se
+                            indica
+                            mediante las propiedades top, bottom, left, right y z-index, dependen del posicionamiento
+                            del
+                            elemento contenedor cuando tiene una posición diferente a static. El resto de los elementos
+                            se
+                            ven afectados y modifican su posición. Ocuparan el espacio que deja el elemento desplazado.
+                        </p>
+                    </div>
+                    <div class="cuadro posit">
+                        <h3>Fixed</h3>
+                        <p>Está ubicado en relación con la Ventana gráfica, siempre permanece en el mismo lugar, incluso
+                            si
+                            la página desplaza. Se utiliza las propiedades> top, bottom, left y right para posicionar el
+                            elemento. No deja un espacio donde normalmente se ubicará.</p>
+                    </div>
+                    <div class="cuadro nuev3">
+                        <h3>Sticky</h3>
+                        <p>Se posicionan en función de la posición de desplazamiento del usuario. Alterna entre relative
+                            y
+                            fijo, dependiendo de la position de desplazamiento.
+                            Se posicionan de forma relativa hasta que se encuentra una posición de desplazamiento dada
+                            en la
+                            Ventana gráfica, luego se “pega” en su lugar (como position: fixed;).
+                        </p>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/position.png" alt="Imagen referente a las posiciones">
+                </div>
+            </div>
+            <div class="abj">
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>Static: Posición por defecto, sin efecto de top, bottom, left, right.
+                    </p>
+                    <p>Relative: Se desplaza respecto a su posición original, pero su espacio sigue igual.</p>
+                    <p>Absolute: Se posiciona de forma exacta y en relación con su contenedor que no sea static. No deja
+                        espacio en el flujo.</p>
+                    <p>Fixed: Fijo en la ventana gráfica, no se desplaza al hacer scroll, tampoco deja espacio.</p>
+                    <p>Sticky: Comienza como relative y se “pega” como fixed al alcanzar la posición de desplazamiento dada.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

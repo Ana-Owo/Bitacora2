@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="../imagenes/logobitacora.png" alt="">
+            <h1>Bitácora Parcial 2</h1>
+        </header>
+        <nav>
+            <a href="../index.html">Propiedad position</a>
+            <a href="index2.html">Propiedad display</a>
+            <a href="index3.html">Nuevas propiedades de CSS3</a>
+            <a href="index4.html">Animación</a>
+            <a href="index5.html">Referencias avanzadas</a>
+            <a href="index6.html">Carrera universitaria</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1>Propiedad display</h1>
+            </div>
+            <div class="izq">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>Da el tipo de caja de un elemento, tiene valores predeterminado como block o inline</li>
+                        <li>Block: cominezan en una nueva linea y ocupan todo el ancho
+                        </li>
+                        <li>Se usa en los div, h1-h6, p, form, etc.</li>
+                        <li>Inline: no comineza una linea nueva y ocupa el ancho necesario</li>
+                        <li>Se usa en span, a, img</li>
+                        <li>Inline-block: Permite definir ancho y altura.
+                            Respeta margin y padding.
+                            No añade un salto de línea, permitiendo alinearse junto a otros elementos.</li>
+                        <li>None: Utilizado comúnmente con JavaScript para ocultar elementos.
+                            No genera caja; el elemento desaparece y no ocupa espacio.</li>
+                        <li>Table: Asigna comportamiento de tabla a los elementos anidados.</li>
+                        <li>table-row actúa como una fila (tr).</li>
+                        <li>table-cell actúa como una celda (td).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dere">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2 dis">
+                    <p>Establece el tipo de caja que genera cada elemento, que cada uno tiene un valor predeterminado
+                        según el tipo de elemento que sea. El valor predeterminado block o inline. </p>
+                    <div class="cuadro">
+                        <h3>Block</h3>
+                        <p>Siempre comienza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la
+                            izquierda y hacia la derecha tanto como sea posible). </p>
+                        <h4>Elementos con display block</h4>
+                        <p>Div, h1-h6, p, form, header, footer, section </p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Inline</h3>
+                        <p>No comienza en una nueva línea y solo ocupa el ancho que sea necesario.</p>
+                        <h4>Elementos en línea: </h4>
+                        <p>Span, a, img</p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Inline-block</h3>
+                        <p>Permite establecer un ancho y una altura en el elemento. Se respetan los margin y padding,
+                            con inline no lo son. No agregan un salto de línea después del elemento, por lo que puede
+                            alinearse junto a otros elementos.
+                        </p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>None</h3>
+                        <p>Se usa comúnmente con JavaScript para ocultar y mostrar un elemento cuando el usuario realiza
+                            alguna acción como pulsar un botón.
+                            No genera ninguna caja. El elemento desaparece por completo de la página y no ocupa sitio,
+                            por lo que los elementos adyacentes ocupan su lugar. Si se utiliza la propiedad sobre un
+                            elemento, todos sus descendientes También desaparecen por completo de la pagina. </p>
+                    </div>
+                    <div class="cuadro nuev3">
+                        <h3>Table</h3>
+                        <p>Asigna un comportamiento de tabla a los elementos que haya dentro (anidados a la
+                            etiqueta donde estas colocando el display: table;).
+                            Pueden usar otra serie de valores display que corresponden con distintas
+                            etiquetas HTML que usas en las tablas.
+                        </p>
+                        <p>Display: table-row; actúa como una fila, etiqueta “tr”.</p>
+                        <p>Display: table-cell; etiquetas que trabajan como una celda, etiqueta “td”.</p>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="../imagenes/display.jpg" alt="Imagen referente a las posiciones">
+                </div>
+            </div>
+            <div class="abj">
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>La propiedad display nos ayuda a determinar cómo se visualizan los elementos en una página web. Los valores principales son:
+                        </p>
+                        <p>block: Los elementos comienzan en una nueva línea y ocupan todo el ancho disponible, por ejemplo: div, h1, p.</p>
+                        <p>inline: Los elementos no inician en una nueva línea y solo ocupan el ancho necesario, por ejemplo: span, a, img.</p>
+                        <p>inline-block: Permite establecer ancho y altura, respeta margin y padding, y no agrega saltos de línea.</p>
+                        <p>none: Oculta elementos de la página, haciendo que no ocupen espacio.</p>
+                        <p>table: Permite que los elementos anidados tengan un comportamiento similar al de tablas, con valores como table-row y table-cell.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

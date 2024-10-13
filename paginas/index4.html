@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="../imagenes/logobitacora.png" alt="">
+            <h1>Bitácora Parcial 2</h1>
+        </header>
+        <nav>
+            <a href="../index.html">Propiedad position</a>
+            <a href="index2.html">Propiedad display</a>
+            <a href="index3.html">Nuevas propiedades de CSS3</a>
+            <a href="index4.html">Animación</a>
+            <a href="index5.html">Referencias avanzadas</a>
+            <a href="index6.html">Carrera universitaria</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1>Animación</h1>
+            </div>
+            <div class="izq">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>Permite animar elementos usando la regla @keyframes, que define cómo cambian los estilos de
+                            un elemento.</li>
+                        <li>Se definen estilos iniciales y finales (usando from y to), y pueden tener múltiples
+                            animaciones, cada una con un nombre único.</li>
+                        <li>animation-duration es obligatoria y especifica el tiempo que toma completar un ciclo de
+                            animación. Si no se establece, no habrá animación.</li>
+                        <li>animation-iteration-count define cuántas veces se debe repetir la animación.</li>
+                        <li>animation-timing-function especifica la velocidad de la animación, con opciones como linear,
+                            ease, ease-in, ease-out, y cubic-bezier.</li>
+                        <li>animation-direction determina la dirección en la que se reproduce la animación (normal,
+                            reverse, alternate, alternate-reverse).</li>
+                        <li>animation-delay especifica un retraso antes de que inicie la animación.</li>
+                        <li>animation-play-state controla si la animación está en ejecución (running) o en pausa
+                            (paused).</li>
+                        <li>animation-fill-mode define cómo se verá el elemento antes y después de la animación (none,
+                            forwards, backwards, both).</li>
+                        <li>animation permite configurar todas las propiedades relacionadas en una sola declaración.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dere">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p>Permite animar la mayoría de los elementos sin usar javascript. Cuando especifica estilos CSS de
+                        la regla @keyframes, la animación cambiara del estilo actual al estilo nuevo.
+                        Para que una animación funcione, se debe vincular la animación a un elemento. </p>
+                    <div class="cuadro posit">
+                        <h3>Animation-duration </h3>
+                        <p>Especifica cuanto tiempo debe transcurrir una animación para completar un ciclo
+
+                            Si no se especifica la propiedad de duración de la animación, no se producirá ninguna
+                            animación, ya que el valor predeterminado es 0 segundos
+
+                            También, se puede especificar cuando cambiara usando “to(0% inicio)” y “from (100%
+                            completo)” </p>
+                    </div>
+
+                    <div class="cuadro posit">
+                        <h3>animation-interaction-count </h3>
+                        <p>Especifica el número de veces que se debe reproducir una animación. Se expresa en segundos y
+                            se puede utilizar unidades negativas
+                        </p>
+                    </div>
+                    <div class="cuadro nuev3">
+                        <h3>animation-timing-function </h3>
+                        <p>Especifica la curva de velocidad de la animación.</p>
+                        <p>Linear: animación con la misma velocidad de principio a fin.
+                            Ease: animación con un inicio lento, luego rápido y luego termina lentamente.
+                            Ease-in: animación con un inicio lento.
+                            Ease-out: animación con un final lento.
+                            Ease-in-out: animación con un inicio y un final lentos.
+                            Cubic-bezier: permite definir sus propios valores. Requiere valores numéricos de 0 a 1.
+                        </p>
+
+                    </div>
+                    <div class="cuadro nuev3">
+                        <h3>animation-direction </h3>
+                        <p>Especifica si una animación debe reproducirse hacia adelante, hacia atrás o en ciclos
+                            alternos.
+                        </p>
+                        <p>Normal: la animación se reproduce de forma normal (hacia delante). Esto es predeterminado
+                            Reverse: la animación se reproduce en dirección inversa (hacia atrás).
+                            Alternate: la animación se reproduce hacia delante primero, luego hacia atrás.
+                            Alternate-reverse: la animación se reproduce hacia atrás primero, luego hacia delante. </p>
+                    </div>
+                    <div class="cuadro nuev3">
+                        <h3>animation-delay </h3>
+                        <p>Especifica un retraso para el inicio de una animación. Se expresa en segundos. Se pueden
+                            utilizar unidades negativas. </p>
+                        <h3>animation-play-state </h3>
+                        <p>Especifica si la animación se está ejecutando (running) o está en pausa (paused).</p>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="../imagenes/animacion.png" alt="Imagen referente a las posiciones">
+                </div>
+            </div>
+            <div class="abj">
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>Permite animar elementos sin necesidad de JavaScript a través de la regla @keyframes, que define
+                        los estilos inicial y final de una animación. La propiedad animation-duration es importante para
+                        establecer el tiempo de la animación.</p>
+                    <p>Se pueden repetir animaciones con animation-iteration-count y controlar la velocidad con
+                        animation-timing-function. La dirección de la animación se define con animation-direction,
+                        mientras que animation-delay permite establecer un retraso antes de que comience.</p>
+                    <p>El estado de la animación se puede pausar o dar play mediante animation-play-state, y
+                        animation-fill-mode determina cómo se verá el elemento antes y después de la animación. Además,
+                        la propiedad abreviada animation permite configurar todas estas propiedades de manera facil y rapida.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

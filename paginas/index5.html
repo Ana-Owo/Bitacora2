@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="../imagenes/logobitacora.png" alt="">
+            <h1>Bitácora Parcial 2</h1>
+        </header>
+        <nav>
+            <a href="../index.html">Propiedad position</a>
+            <a href="index2.html">Propiedad display</a>
+            <a href="index3.html">Nuevas propiedades de CSS3</a>
+            <a href="index4.html">Animación</a>
+            <a href="index5.html">Referencias avanzadas</a>
+            <a href="index6.html">Carrera universitaria</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1>Referencias avanzadas</h1>
+            </div>
+
+            <div class="izq">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>Id: Identifica de manera única a un elemento en el documento.
+                            No puede ser duplicado, tiene ser único.</li>
+                        <li>Class: permite asignar el mismo nombre a múltiples elementos que comparten un diseño.</li>
+                        <li>Elementos: Seleccionan todos los elementos de un tipo específico.</li>
+                        <li>:nth-child(): Selecciona un hijo específico.</li>
+                        <li>:first-child y :last-child: Seleccionan el primer y el último hijo, respectivamente.</li>
+                        <li>:only-child: Afecta un elemento SOLO si es el único hijo</li>
+                        <li>:not(): Aplica estilos a todos los elementos excluyendo los que coinciden con la referencia dentro de los paréntesis.</li>
+                        <li>[atributo="valor"] [atributo^="valor"] [atributo$="valor"][atributo*="valor"]: elementos con un atributo específico,
+                             elementos con atributo que comienza con un valor específico,
+                             elementos con atributo  que termina con un valor específico,
+                             elementos con atributo que contiene una cadena específica, respectivamente.</li>
+                        <li>hijos directos (>): elementos que son hijos inmediatos de un padre.</li>
+                        <li>hermanos adyacentes (+):  el hermano inmediato que sigue a otro elemento.</li>
+                        <li>hermanos generales (~): todos los hermanos de un elemento, inmediatos o no.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dere">
+
+                <h2>Apuntes de la clase</h2>
+
+                <div class="texto2">
+                    <div class="cuadro">
+                        <h3>Atributo id </h3>
+                        <p>El atributo id es como un nombre que identifica al elemento. El valor de este atributo no
+                            puede ser duplicado. Este nombre debe ser único en todo el documento. </p>
+                        <h3>Atributo class </h3>
+                        <p>Es más flexible y puede ser asignado a varios elementos HTML en el documento que comparten un
+                            diseño similar </p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Elementos </h3>
+                        <p>Un selector de elementos en CSS es una regla que selecciona todos los elementos de un tipo
+                            especifico en el documento HTML. Es el selector más básico y se refiere directamente al
+                            nombre de una etiqueta </p>
+                        <h3>Pseudoclases - :nth-child() </h3>
+                        <p>La pseudoclase nth-child() nos permite encontrar un hijo especifico </p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>:nth-chil(odd) :nth-child(even) </h3>
+                        <p>Las palabras clave odd (impar) y even (par) se utilizan para seleccionar elementos para
+                            seleccionar elementos con base en su posición en la secuencia de hijos, específicamente para
+                            alternar entre elementos impares y pares
+                        </p>
+                        <h3>:first-child </h3>
+                        <p>Referencia solo el primer hijo. Estas pseudoclases en particular no requieres palabras clave
+                            o parámetro
+                        </p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>:last-child </h3>
+                        <p>Referencia solo al último hijo. Estas pseudoclases en particular no requieres palabras clave
+                            o parámetro.</p>
+                        <h3>Only-child </h3>
+                        <p>Afecta un elemento siempre y cuando sea el único hijo disponible. Estas pseudoclases en
+                            particular no requieres palabras clave o parámetro </p>
+                    </div>
+                    <div class="cuadro nuev3">
+                        <h3>:not() </h3>
+                        <p>Nos permite declarar una excepción. Los estilos en la regla creada con esta pseudoclase serán
+                            asignados a todo elemento excepto aquellos incluidos en la referencia entre paréntesis
+                            En lugar de la palabra clave de un elemento podemos usar cualquier otra referencia que
+                            deseemos.
+                        </p>
+                    </div>
+                    <h2>Selectores de atributo</h2>
+                    <p>Un selector de atributo en CSS selecciona elementos en función de la presencia o el. Valor de uno
+                        de sus atributos. Esto permite aplicar estilos a los elementos que tienen un atributo
+                        especifico, o cuyo atributo tiene un valor determinado. </p>
+                    <div class="cuadro nuev3">
+                        <h3>[atributo ^=”inicio”] </h3>
+                        <p>Una regla con el selector (^=) selecciona elementos cuyo atributo comienza con un valor
+                            especifico
+                        </p>
+                        <h3>[atributo$=”final”] </h3>
+                        <p>Una regla con el selector ($=) selecciona elementos cuyo atributo termina con un valor
+                            especifico
+                        </p>
+                        <h3>[atributo*=””] </h3>
+                        <p>Una regla con el selector (*=) selecciona elementos cuyo atributo contiene una cadena
+                            especifica en cualquier posición
+                        </p>
+                    </div>
+                </div>
+
+                <div class="imagen">
+                    <img src="../imagenes/referencias.jpg" alt="Imagen referente a las posiciones">
+                </div>
+
+            </div>
+
+            <div class="izq ap">
+                
+                <div class="texto1">
+                <h2>Selectores de relación </h2>
+                <p>Los selectores de relación en CSS permiten seleccionar elementos basados en su relación con otros
+                    elementos dentro del documento. Estos selectores son útiles para aplicar estilos a elementos que
+                    tienen un vínculo estructural con otros elementos, como ancestros, padres, hermanos o descendientes.
+                </p>
+                    <div class="cuadro">
+                        <h3>Selector de hijos directos (>) </h3>
+                        <p>Selecciona los elementos que son hijos inmediatos de un elemento padre. nota: Por lo cual no
+                            aplica a los descendientes
+                        </p>
+                    </div>
+
+                    <div class="cuadro">
+                        <h3>Selector de hermanos adyacentes (+) </h3>
+                        <p>Selecciona un elemento que es hermano inmediato, es decir, está justo después de otro
+                            elemento.
+                        </p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Selector de hermanos generales (~) </h3>
+                        <p>Selecciona a los elementos hermanos de un elemento anterior, sean hermanos inmediatos o no.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="abj">
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>Permite una selección más precisa de elementos a través de varios atributos y selectores</p>
+                    <p>id: Identifica de manera única un elemento en el documento, por lo cual, no puede repetirse.
+                        class: Permite asignar el mismo nombre a varios elementos con un diseño similar.</p>
+                    <p>Facilitan la selección de elementos basados en su posición o estado, como :nth-child(), :first-child, :last-child, :only-child, y :not().</p>
+                    <P> Los selectores de atributo, nos permiten seleccionar elementos según la presencia o el valor de sus atributos, utilizando operadores como ^=, $=, y *=.</P>
+                    <p> Los selectores de relación, sirve para seleccionar elementos segun su relacion con otros. Hijos directos (>),
+                        hermanos adyacentes (+),
+                        hermanos generales (~).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
